@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-body">
+    <%= simple_form_for(@restaurant) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category %>
+      <%= f.submit "Submit restaurant", class: "btn btn-primary" %>
+    <% end %>
+    <div>
+      <%= link_to 'Back', restaurants_path %>
+    </div>
+  </div>
+</div>
+
